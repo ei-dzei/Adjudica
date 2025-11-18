@@ -1,0 +1,167 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #B46B83, #8C4E82, #5F2F7B, #2F1942); 
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(90deg, #B46B83 0%, #8C4E82 49%, #5F2F7B 63%, #2F1942 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Navigation bar */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: transparent;
+  padding: 0.5rem 2rem; 
+  border-radius: 22px; 
+  transition: all 0.3s ease;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.302);
+}
+
+/* When user scrolls */
+header.shrink {
+  width: 80%;
+  left: 10%;
+}
+
+/* Buttons in Navigation bar */
+button {
+  background: linear-gradient(to right, #B46B83, #8C4E82, #5F2F7B, #2F1942);
+  border: none;
+  padding: 12px 32px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  outline: 0 0 6px rgba(255, 255, 255, 0.302);
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to left, #B46B83, #8C4E82, #5F2F7B, #2F1942);
+  transform: scale(0.95);
+}
+
+button:focus {
+  outline: 1px solid #2F1942;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.302);
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 50px 2px 3px 2px; 
+  background: radial-gradient(circle at top, #B46B83 0%, #8C4E82 49%, #5F2F7B 63%, #2F1942 100%);
+}
+
+.hero-title {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-top: 100px;
+  text-align: center;
+  color: white; 
+  background: none;
+}
+
+.cta-btn {
+  background: linear-gradient(to right, #B46B83, #8C4E82, #5F2F7B);
+  border: 1px solid white;
+  padding: 12px 32px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 9999px;
+  margin-top: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: linear-gradient(to left, #B46B83, #8C4E82, #5F2F7B);
+  transform: scale(1.05);
+}
+
+.cta-btn:focus {
+  outline: none;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.302);
+}
+
+/* Footer Links */
+footer .footer-links a {
+  color: #ff7a3c;
+  text-decoration: none;
+  margin: 0 10px;
+  border: 1px solid transparent;
+  padding: 0.5rem;
+  border-radius: 22px;
+  transition: all 0.3s ease;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+  border: 1px solid #ff7a3c; 
+}
+
+footer .social-links a {
+  color: #eaeaea;
+  margin: 0 15px;
+  font-size: 1.5rem;
+}
+
+footer .social-links a:hover {
+  color: #ff7a3c;
+}
+
+/* Gradient Backgrounds */
+.bg-adjudica-gradient {
+  background: linear-gradient(to right, #B46B83, #8C4E82, #5F2F7B);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .cta-btn {
+    width: 100%;
+  }
+
+  .feature-pill {
+    padding: 15px;
+  }
+}
+
+/* Animations for Buttons */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cta-btn {
+  animation: pulse 2s infinite ease-in-out;
+}
