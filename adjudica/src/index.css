@@ -138,6 +138,11 @@ footer .social-links a:hover {
   background: linear-gradient(to right, #B46B83, #8C4E82, #5F2F7B);
 }
 
+/* Section Backgrounds */
+.bg-second-section, footer {
+  background-color: #2F1942;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-title {

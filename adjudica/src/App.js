@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./App.css"; 
+import "./App.css";
 
 function App() {
   // Header scroll state: shrink navbar on scroll
@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-[#050509] text-white">
-      {/* HERO SECTION */}
+      {/* Hero section */}
       <div className="relative overflow-hidden pb-24">
         <div
           className="absolute inset-0 opacity-80"
@@ -44,28 +44,27 @@ function App() {
                 />
               </div>
               <span className="font-semibold tracking-tight text-sm md:text-base">
-                <span className="gradient-text">Adjudica.ai</span>
+                <span className="text-white">Adjudica.ai</span>
               </span>
             </div>
             <button
-              className="rounded-full bg-gradient-to-r from-[#B46B83] via-[#8C4E82] to-[#5F2F7B] px-6 py-3 text-sm font-semibold shadow-[0_0_25px_rgba(255,122,60,0.6)] hover:brightness-110 transition"
+              className="rounded-full bg-white text-[#2F1942] px-6 py-3 text-sm font-semibold shadow-[0_0_25px_rgba(255,122,60,0.6)] hover:brightness-110 transition"
             >
-              Log in / Sign up
+              Log in/Sign up
             </button>
           </header>
 
           {/* Hero Main */}
           <section className="flex flex-col items-center text-center">
-            <p className="text-xs md:text-sm text-white/70 mb-4">
-              Join early builders, traders, and funds protecting prediction markets with AI.
+            <p className="text-xs md:text-sm text-white/70 mb-4 mt-20">
+              Join market participants, stakers, and jurors enhancing prediction markets with AI
             </p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight max-w-3xl mx-auto text-white">
-              Your AI-Assisted Dispute Layer for <span className="text-white">Smarter & Safer</span> Prediction Markets
+              Your AI-Assisted Dispute Chatbot for <span className="text-white">Smarter & Safer</span> Prediction Markets
             </h1>
             <p className="mt-5 text-sm md:text-base text-white/70 max-w-2xl">
-              Turn hours of monitoring and dispute work into minutes. Adjudica’s dual-engine
-              Sentinel + Juror system catches incorrect resolutions, compiles evidence, and
-              posts dispute bonds before attackers can cash out.
+              Turn hours of monitoring and dispute work into minutes. Adjudica’s dual-engine system, 
+              Sentinel & Juror, detects incorrect outcomes, compiles evidence, and posts bonds before attackers can profit.
             </p>
 
             {/* CTA */}
@@ -73,10 +72,10 @@ function App() {
               <input
                 type="email"
                 placeholder="Enter your email to join the waitlist"
-                className="flex-1 rounded-full bg-black/70 border border-white/15 px-5 py-3 text-sm placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-[#ff7a3c]"
+                className="flex-1 rounded-full bg-black/70 text-white px-5 py-3 text-sm placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-[#ff7a3c]"
               />
               <button
-                className="rounded-full bg-gradient-to-r from-[#B46B83] via-[#8C4E82] to-[#5F2F7B] px-6 py-3 text-sm font-semibold shadow-[0_0_25px_rgba(255,122,60,0.6)] hover:brightness-110 transition"
+                className="rounded-full bg-white text-[#2F1942] px-6 py-3 text-sm font-semibold shadow-[0_0_25px_rgba(255,122,60,0.6)] hover:brightness-110 transition"
               >
                 Get early access
               </button>
@@ -115,14 +114,14 @@ function App() {
       <section className="bg-[#2F1942] pb-24">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex flex-col items-center text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-semibold mb-3">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-3 mt-20">
               Detect, Dispute, <span className="text-[#ff7a3c]">Defend</span>
             </h2>
             <p className="text-sm md:text-base text-white/70 max-w-2xl">
-              Adjudica turns every prediction market into a fully defended market.
-              Sentinel watches deterministic events 24/7, Juror handles ambiguous cases with
-              human-AI intelligence, and the Unified Dispute Vault guarantees bond capital
-              is always ready.
+              Adjudica transforms every prediction market into a fully protected environment. 
+              Sentinel monitors deterministic events 24/7, while Juror leverages human-AI 
+              intelligence to resolve complex cases, backed by the Unified Dispute Vault that
+              ensures immediate capital availability.
             </p>
           </div>
 
@@ -145,17 +144,17 @@ function App() {
             <FeaturePill
               label="Sentinel"
               title="Autonomous Dispute Engine"
-              desc="Always-on AI that monitors markets, cross-checks deterministic data, and posts dispute bonds before attackers can finalize incorrect outcomes."
+              desc="AI-powered, autonomous monitoring of markets to detect and challenge incorrect resolutions instantly, with no human oversight required."
             />
             <FeaturePill
               label="Juror"
               title="Human–AI Collective Intelligence"
-              desc="For ambiguous, news-driven, or context-heavy events, Juror opens an evidence window, scores contributor proofs, and synthesizes a unified dispute document."
+              desc="A hybrid system for ambiguous events, aggregating evidence from the community, evaluating credibility, and generating a unified dispute document."
             />
             <FeaturePill
               label="Unified Dispute Vault"
               title="Single Capital Pool"
-              desc="Stake once and secure every market. UDV funds Sentinel and Juror disputes, auto-compounds rewards, and routes yield back to stakers."
+              desc="One capital pool to fund both Sentinel and Juror disputes, ensuring maximum liquidity efficiency and instant dispute execution."
             />
           </div>
         </div>
@@ -178,16 +177,16 @@ function App() {
                 <span className="font-semibold tracking-tight">Adjudica.ai</span>
               </div>
               <p className="text-sm text-white/70 max-w-md">
-                Make low-liquidity, low-attention markets as safe as flagship ones. Join the
-                early access list and help test Sentinel + Juror live.
+                Protect low-liquidity markets just as securely as flagship ones. 
+                Join the early access list and help us test Sentinel & Juror live.
               </p>
             </div>
 
             <div className="w-full max-w-md flex flex-col sm:flex-row gap-3">
               <input
                 type="email"
-                placeholder="Work email"
-                className="flex-1 rounded-full bg-black/70 border border-white/15 px-5 py-3 text-sm placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-[#ff7a3c]"
+                placeholder="Enter your email"
+                className="flex-1 rounded-full bg-black/70 text-white px-5 py-3 text-sm placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-[#ff7a3c]"
               />
               <button className="rounded-full bg-gradient-to-r from-[#B46B83] via-[#8C4E82] to-[#5F2F7B] px-6 py-3 text-sm font-semibold shadow-[0_0_25px_rgba(255,122,60,0.6)] hover:brightness-110 transition">
                 Sign up for free
@@ -199,12 +198,19 @@ function App() {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-xs text-white/50">
             <p>© {new Date().getFullYear()} Adjudica Technologies. All rights reserved.</p>
             <div className="flex flex-wrap gap-4">
-              <button className="hover:text-white">Terms of Service</button>
-              <button className="hover:text-white">Privacy Policy</button>
+              <button className="text-white hover:text-[#ff7a3c] bg-transparent border-none px-0 py-0 text-xs">
+                Terms of Service
+              </button>
+              <button className="text-white hover:text-[#ff7a3c] bg-transparent border-none px-0 py-0 text-xs">
+                Privacy Policy
+              </button>
               <span className="opacity-60">•</span>
-              <button className="hover:text-white">X</button>
-              <button className="hover:text-white">Discord</button>
-              <button className="hover:text-white">GitHub</button>
+              <button className="text-white hover:text-[#ff7a3c] bg-transparent border-none px-0 py-0 text-xs">
+                X
+              </button>
+              <button className="text-white hover:text-[#ff7a3c] bg-transparent border-none px-0 py-0 text-xs">
+                Discord
+              </button>
             </div>
           </div>
         </div>

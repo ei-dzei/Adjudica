@@ -43,31 +43,32 @@ header.shrink {
 
 /* Buttons in Navigation bar */
 button {
-  background: linear-gradient(to right, #B46B83, #8C4E82, #5F2F7B, #2F1942);
-  border: none;
-  padding: 12px 32px;
+  background: none;
+  border: none; 
+  padding: 0; 
   font-size: 1rem;
-  color: white;
+  color: #2F1942;  
   cursor: pointer;
-  outline: 0 0 6px rgba(255, 255, 255, 0.302);
-  border-radius: 9999px;
+  outline: 0;
+  border-radius: 0; 
   transition: all 0.3s ease;
+  opacity: 0.8; 
 }
 
 button:hover {
-  background: linear-gradient(to left, #B46B83, #8C4E82, #5F2F7B, #2F1942);
-  transform: scale(0.95);
+  color: white; 
+  background: linear-gradient(90deg, #B46B83 0%, #8C4E82 49%, #5F2F7B 63%, #2F1942 100%); 
 }
 
 button:focus {
-  outline: 1px solid #2F1942;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.302);
+  outline: none;
+  box-shadow: none;
 }
 
 /* Hero Section */
 .hero-section {
   text-align: center;
-  padding: 50px 2px 3px 2px; 
+  padding: 80px 2px 3px 2px;
   background: radial-gradient(circle at top, #B46B83 0%, #8C4E82 49%, #5F2F7B 63%, #2F1942 100%);
 }
 
@@ -103,6 +104,23 @@ button:focus {
   box-shadow: 0 0 6px rgba(255, 255, 255, 0.302);
 }
 
+/* Email Input Field */
+input[type="email"] {
+  background-color: white; 
+  color: #2F1942; 
+  border: 1px solid #2F1942; 
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: .90rem;
+  transition: all 0.3s ease;
+}
+
+input[type="email"]:focus {
+  outline: none;
+  border-color: whitesmoke;
+  box-shadow: 0 0 5px rgba(30, 30, 30, 0.6);
+}
+
 /* Footer Links */
 footer .footer-links a {
   color: #ff7a3c;
@@ -119,19 +137,36 @@ footer .footer-links a:hover {
   border: 1px solid #ff7a3c; 
 }
 
-footer .social-links a {
-  color: #eaeaea;
-  margin: 0 15px;
-  font-size: 1.5rem;
+/* 'Sign up for free' button */
+footer .footer-links .signup-btn {
+  background: white;
+  color: #2F1942;
+  padding: 12px 32px;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  border: 1px solid #2F1942;
 }
 
-footer .social-links a:hover {
-  color: #ff7a3c;
+footer .footer-links .signup-btn:hover {
+  background: linear-gradient(90deg, #B46B83 0%, #8C4E82 49%, #5F2F7B 63%, #2F1942 100%); /* Gradient background on hover */
+  color: whitesmoke;
+  background-clip: text;
+  border: none;
 }
 
-/* Gradient Backgrounds */
+/* Footer Paragraph */
+footer p {
+  text-align: left;
+  color: white;
+}
+
+/* Section Backgrounds */
 .bg-adjudica-gradient {
   background: linear-gradient(to right, #B46B83, #8C4E82, #5F2F7B);
+}
+
+.bg-second-section, footer {
+  background-color: #2F1942;
 }
 
 /* Responsive Design */
