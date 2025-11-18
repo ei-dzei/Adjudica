@@ -37,7 +37,11 @@ function App() {
             {/* Navbar */}
             <div className="flex items-center gap-2">
               <div className="h-8 w-8 rounded-full bg-gradient-to-tr from-[#B46B83] via-[#8C4E82] to-[#5F2F7B] flex items-center justify-center text-xs font-bold">
-                A
+                <img
+                  src="/adjudica-logo.png"
+                  alt="Adjudica logo"
+                  className="w-full h-full object-cover opacity-90"
+                />
               </div>
               <span className="font-semibold tracking-tight text-sm md:text-base">
                 <span className="gradient-text">Adjudica.ai</span>
@@ -128,7 +132,7 @@ function App() {
               <div className="aspect-[16/9] bg-black flex items-center justify-center">
                 {/* Screenshot or Demo */}
                 <img
-                  src="/interface.png"
+                  src="/demo.png"
                   alt="Adjudica dashboard"
                   className="w-full h-full object-cover opacity-90"
                 />
@@ -165,7 +169,11 @@ function App() {
             <div>
               <div className="flex items-center gap-2 mb-2">
                 <div className="h-8 w-8 rounded-full bg-gradient-to-tr from-[#ff7a3c] via-[#ff3c6a] to-[#ffdf6b] flex items-center justify-center text-xs font-bold">
-                  A
+                  <img
+                    src="/adjudica-logo.png"
+                    alt="Adjudica logo"
+                    className="w-full h-full object-cover opacity-90"
+                  />
                 </div>
                 <span className="font-semibold tracking-tight">Adjudica.ai</span>
               </div>
