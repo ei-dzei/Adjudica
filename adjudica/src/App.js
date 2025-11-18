@@ -47,11 +47,11 @@ function App() {
                 <span className="text-white">Adjudica.ai</span>
               </span>
             </div>
-            <button
-              className="rounded-full bg-white text-[#2F1942] px-6 py-3 text-sm font-semibold shadow-[0_0_25px_rgba(255,122,60,0.6)] hover:brightness-110 transition"
-            >
-              Log in/Sign up
-            </button>
+            <a href="https://adjudica-five.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <button className="rounded-full bg-white text-[#2F1942] px-6 py-3 text-sm font-semibold shadow-[0_0_25px_rgba(255,122,60,0.6)] hover:brightness-110 transition">
+                  Try Adjudica Now!
+              </button>
+             </a>
           </header>
 
           {/* Hero Main */}
@@ -68,17 +68,12 @@ function App() {
             </p>
 
             {/* CTA */}
-            <div className="mt-8 w-full max-w-xl flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                placeholder="Enter your email to join the waitlist"
-                className="flex-1 rounded-full bg-black/70 text-white px-5 py-3 text-sm placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-[#ff7a3c]"
-              />
-              <button
-                className="rounded-full bg-white text-[#2F1942] px-6 py-3 text-sm font-semibold shadow-[0_0_25px_rgba(255,122,60,0.6)] hover:brightness-110 transition"
-              >
-                Get early access
-              </button>
+             <div className="mt-8 w-full max-w-xl">
+              <a href="https://adjudica-five.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <button className="rounded-full bg-white text-[#2F1942] px-6 py-3 text-sm font-semibold shadow-[0_0_25px_rgba(255,122,60,0.6)] hover:brightness-110 transition">
+                  Start Sentinel & Juror
+                </button>
+              </a>
             </div>
           </section>
 
@@ -163,7 +158,6 @@ function App() {
       {/* Footer */}
       <footer className="bg-[#2F1942] border-t border-white/10 pt-10 pb-8">
         <div className="max-w-6xl mx-auto px-4">
-          {/* CTA */}
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-10">
             <div>
               <div className="flex items-center gap-2 mb-2">
@@ -180,17 +174,6 @@ function App() {
                 Protect low-liquidity markets just as securely as flagship ones. 
                 Join the early access list and help us test Sentinel & Juror live.
               </p>
-            </div>
-
-            <div className="w-full max-w-md flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 rounded-full bg-black/70 text-white px-5 py-3 text-sm placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-[#ff7a3c]"
-              />
-              <button className="rounded-full bg-gradient-to-r from-[#B46B83] via-[#8C4E82] to-[#5F2F7B] px-6 py-3 text-sm font-semibold shadow-[0_0_25px_rgba(255,122,60,0.6)] hover:brightness-110 transition">
-                Sign up for free
-              </button>
             </div>
           </div>
 
